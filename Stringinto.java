@@ -47,7 +47,7 @@ public class Stringinto {
         System.out.println(Arrays.toString(listOfLetters));
 
 
-
+        // . equals and == - have differnt use cases investigate both
 
 
 
