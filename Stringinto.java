@@ -2,6 +2,19 @@ import java.util.*;
 
 public class Stringinto {
     public static void main(String[] arg){
+        // primitives
+        int num =5;
+        double weight = 7.89;
+        //objectgs
+        Integer number = new Integer(5); // Strings doubles integers you can declare formally and informally
+
+        Integer number2 = 5; // autoboxing
+        Double w = new Double(7.89);
+        Double W = 7.89; //autoboxing
+
+        System.out.println(num==number); // despite num primitve number object, object gets 'unboxed'
+        System.out.println(number2.equals(num)) ;// cant call a method to primitive
+        System.out.println(w == W); //autounboxing
         String address = new String("1 Grizzly Way Granite Bay"); // AP test version
         String location = "Yosemite National Park"; // informal way
         System.out.println(address);
@@ -45,10 +58,21 @@ public class Stringinto {
 
         String[] listOfLetters = location.split("a");
         System.out.println(Arrays.toString(listOfLetters));
+        
+
+        double newNum = w; //autounboxing to primtitive
+        int age = number2; //autounboxxing
 
 
-        // . equals and == - have differnt use cases investigate both
+        // . equals versus double equals
 
+        int year = number2.intValue();
+        double average = W.doubleValue();
+
+        System.out.println(average.MIN_VALUE);
+        // .MAX_VALUE; // max possible value of object
+
+        // boxing - formal  - autoboxing - 
 
 
 
