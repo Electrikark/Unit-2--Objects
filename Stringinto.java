@@ -2,6 +2,31 @@ import java.util.*;
 
 public class Stringinto {
     public static void main(String[] arg){
+
+
+        double absolute = Math.abs(8);
+        System.out.println(absolute);
+
+
+        Double exponent = Math.pow(125,5);
+        System.out.println(exponent);
+
+        double sqrt = Math.sqrt(90);
+        System.out.println(sqrt);
+
+        // can't int a float
+
+        double randNumber = Math.random();
+        System.out.println(randNumber);
+        //0.0-0.9999
+
+
+
+
+
+
+
+
         // primitives
         int num =5;
         double weight = 7.89;
@@ -66,14 +91,18 @@ public class Stringinto {
 
         // . equals versus double equals
 
-        int year = number2.intValue();
+        int year = number2.intValue(); //formal
         double average = W.doubleValue();
 
-        System.out.println(average.MIN_VALUE);
+        System.out.println(number2.MAX_VALUE);
+        // System.out.println("SJKLSDFJ".parseint());
+        String s = new String("5");
+        int v = Integer.parseInt(s); // allows strings with numbers
+        System.out.print(v);
         // .MAX_VALUE; // max possible value of object
 
         // boxing - formal  - autoboxing - 
-
+        
 
 
 
